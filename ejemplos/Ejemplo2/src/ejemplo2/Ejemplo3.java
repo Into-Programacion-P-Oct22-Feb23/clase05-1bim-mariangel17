@@ -6,7 +6,7 @@
  * mayor o igual a 7.5. Si el estudiante aprueba el ciclo, presentar
  * un mensaje como sigue: Estudiante aprobado con un promedio: 8.1
  */
-package ejemplo1;
+package ejemplo2;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -15,7 +15,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo2 {
+public class Ejemplo3 {
 
     public static void main(String[] args) {
         // Condicionales simples
@@ -23,8 +23,15 @@ public class Ejemplo2 {
         entrada.useLocale(Locale.US);
 
         double promedio;
-        System.out.println("Ingrese la nota necesaria");
-        promedio = entrada.nextDouble();
+        double nota1;
+        double nota2;
+        double suma;
+        System.out.println("Ingrese nota1");
+        nota1 = entrada.nextDouble();
+        System.out.println("Ingrese nota2");
+        nota2 = entrada.nextDouble();
+        suma =nota1+nota2;
+        promedio = suma / 2;
         
 
         if (promedio >= 7.5) { // Falso
